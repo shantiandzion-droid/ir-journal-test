@@ -7,7 +7,6 @@ import pandas as pd
 from datetime import date, datetime
 import json
 import os
-import openai
 
 # 页面配置
 st.set_page_config(
