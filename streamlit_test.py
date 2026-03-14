@@ -158,7 +158,7 @@ if page == "最新文献":
 
             with col2:
                 st.button("📥 导出本文", key=f"export_{art['id']}")
-                st.button("🔗 访问原文", on_click=lambda u=art['url']: st.markdown(f'<meta http-equiv="refresh" content="0; url={u}">', unsafe_allow_html=True))
+                st.button("🔗 访问原文", key=f"visit_{art['id']}", on_click=lambda u=art['url']: st.markdown(f'<meta http-equiv="refresh" content="0; url={u}">', unsafe_allow_html=True))
 
 elif page == "高级搜索":
     st.title("🔍 高级搜索")
